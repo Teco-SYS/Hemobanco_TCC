@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+#root {
+    min-height: 100vh;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;
@@ -857,4 +861,144 @@ tbody td {
 .btn-remover:hover {
     background: #fde8e8;
     color: #c0392b;
+}
+
+
+/* ===== Documento de declaração ===== */
+.declaracao-preview {
+    max-width: 720px;
+    margin: 28px auto 0;
+}
+
+.declaracao-documento {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #222;
+}
+
+.decl-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.decl-logo {
+    font-size: 36px;
+    line-height: 1;
+}
+
+.decl-header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #6b0f1a;
+    letter-spacing: 0.04em;
+}
+
+.decl-sub {
+    margin: 2px 0;
+    font-size: 12px;
+    color: #666;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.decl-line {
+    border: none;
+    border-top: 2px solid #6b0f1a;
+    margin: 16px 0 20px;
+}
+
+.decl-title {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #6b0f1a;
+    margin: 0 0 8px;
+}
+
+.decl-protocolo {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 22px;
+}
+
+.decl-#root {
+    min-height: 100vh;
+}
+
+body {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.decl-body p {
+    margin: 6px 0;
+}
+
+.decl-destaque {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b0f1a;
+    margin: 14px 0 !important;
+}
+
+.decl-texto-final {
+    margin-top: 22px !important;
+    text-align: justify;
+    font-size: 13px;
+    color: #444;
+}
+
+.decl-footer {
+    margin-top: 36px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.decl-assinatura {
+    margin: 36px auto 8px;
+    width: 260px;
+}
+
+.decl-linha-assinatura {
+    border-top: 1px solid #333;
+    margin-bottom: 8px;
+}
+
+.decl-rodape {
+    margin-top: 28px;
+    font-size: 11px;
+    color: #888;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #declaracao-documento,
+    #declaracao-documento * {
+        visibility: visible;
+    }
+    #declaracao-documento {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    .no-print,
+    .sidebar,
+    .top-bar,
+    .nav-item,
+    .btn-sair {
+        display: none !important;
+    }
 }
