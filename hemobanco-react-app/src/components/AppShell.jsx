@@ -1,7 +1,7 @@
 const NAV = [
   { id: 'painel', label: 'Painel de Controle', icon: 'i-home' },
   { id: 'cadastro-doadores', label: 'Cadastro de doadores', icon: 'i-user' },
-  { id: 'cadastro-doacao', label: 'Cadastro de doação', icon: 'i-plus' },
+  { id: 'cadastro-doacao', label: 'Cadastro de doação', icon: 'i-cross' },
   { id: 'doadores-bloqueados', label: 'Doadores bloqueados', icon: 'i-block' },
   { id: 'gerar-declaracoes', label: 'Gerar declarações', icon: 'i-doc' },
   { id: 'notificacoes', label: 'Notificações', icon: 'i-bell' },

@@ -7,7 +7,7 @@ const CARDS = [
   },
   {
     id: 'cadastro-doacao',
-    icon: 'i-blood',
+    icon: 'i-cross',
     title: 'Cadastro de doação',
     text: 'Registrar coleta e intervalo regulatório.',
   },

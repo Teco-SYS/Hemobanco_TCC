@@ -37,18 +37,18 @@ export default function Login({ onLogin }) {
     <div className="login-page">
       <div className="login-container">
         <div className="login-visual">
-          <img className="login-visual-img" src={"/img/drop.png"} alt="Hemobanco" />
+          <img className="login-visual-img" src={"/img/Banner doação.png"} alt="Hemobanco" />
           <div className="login-visual-overlay">
-            <span className="i i-blood i-xl" />
+            {/*<span className="i i-cross i-xl" />
             <h2>Hemobanco</h2>
-            <p>Doação que salva vidas na Região Metropolitana de São Paulo</p>
+            <p>Doação que salva vidas na Região Metropolitana de São Paulo</p>*/}
           </div>
         </div>
 
         <div className="login-panel">
           <div className="login-header">
             <div className="logo">
-              <span className="i i-blood logo-icon" />
+              <span className="i i-cross logo-icon" />
               <h1>Hemobanco</h1>
             </div>
             <p>Sistema unificado de informações de doadores de sangue e hemocomponentes</p>
@@ -64,7 +64,7 @@ export default function Login({ onLogin }) {
                 setError('')
               }}
             >
-              Empresa / Hemocentro
+              Hemocentro
             </div>
             <div
               className={`login-tab ${tab === 'doador' ? 'active' : ''}`}
@@ -73,7 +73,7 @@ export default function Login({ onLogin }) {
                 setError('')
               }}
             >
-              Doador
+              Colaborador
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function Login({ onLogin }) {
                 />
               </div>
               <button type="submit" className="btn-primary">
-                Entrar como Empresa
+                Entrar como Hemocentro
               </button>
             </form>
           ) : (
@@ -130,7 +130,7 @@ export default function Login({ onLogin }) {
                 />
               </div>
               <button type="submit" className="btn-primary">
-                Entrar como Doador
+                Entrar como Colaborador
               </button>
             </form>
           )}

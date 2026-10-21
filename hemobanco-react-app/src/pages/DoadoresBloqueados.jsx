@@ -72,7 +72,7 @@ export default function DoadoresBloqueados() {
 
       <div className="form-container bloqueio-card">
         <h3 className="section-subtitle">
-          <span className="i i-plus" /> Adicionar doador bloqueado
+          <span className="i i-cross" /> Adicionar doador bloqueado
         </h3>
         <form onSubmit={submitAdd}>
           <div className="form-row">
